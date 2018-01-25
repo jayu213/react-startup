@@ -14,5 +14,9 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/vipinyadav610/reactstartup/issues"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
