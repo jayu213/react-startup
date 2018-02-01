@@ -1,7 +1,12 @@
+const path = require('path');
+const sourcePath = path.join(__dirname, '../src');
+
 module.exports = {
-        entry: '../src/index.js',
+        entry:{
+          app:path.resolve(sourcePath, 'index.js') 
+        } ,
         output: {
-          path: __dirname,
+          path: path.join(__dirname, '../dist'),
           publicPath: '/',
           filename: 'bundle.js'
         },
