@@ -20,7 +20,10 @@ module.exports = {
           extensions: ['.js', '.jsx']
         },
         devServer: {
-          historyApiFallback: true,
-          contentBase: './'
+          historyApiFallback: {
+            index: path.join(__dirname, "../index.html")
+          },
+          contentBase: [path.join(__dirname, "../")],
+          publicPath: path.join(__dirname, "../")
         }
       };
