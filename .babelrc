@@ -1,11 +1,4 @@
 {
-        "presets": [
-                "react",
-                "env",
-                "stage-0"
-        ],
-        "plugins": [
-                "transform-async-to-generator",
-                "transform-decorators-legacy"
-        ]
+  "presets": ["react", "env", "stage-0"],
+  "plugins": ["transform-async-to-generator", "transform-decorators-legacy"]
 }
