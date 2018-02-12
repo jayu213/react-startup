@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: '[name].[chunkhash].js'
+    filename: '[name].js'
   },
   module: {
     loaders: [{
