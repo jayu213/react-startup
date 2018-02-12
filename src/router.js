@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Loadable from "react-loadable";
 
@@ -13,7 +14,7 @@ const About = Loadable({
   loading: Loading
 });
 
-const App = () => (
+const Routes = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={Home} />
@@ -21,4 +22,4 @@ const App = () => (
     </Switch>
   </Router>
 );
-export default App;
+export default Routes;
