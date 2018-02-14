@@ -1,9 +1,5 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-module.exports = [{
-  test: /\.(js|jsx)$/,
-  exclude: /node_modules/,
-  loader: 'babel-loader'
-}, {
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+export default [{
   test: /\.(js|jsx)$/,
   exclude: /node_modules/,
   loader: ['babel-loader', 'eslint-loader']

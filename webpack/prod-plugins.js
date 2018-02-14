@@ -1,10 +1,10 @@
-const webpack = require('webpack')
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+import webpack from 'webpack'
+import path from 'path'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
-module.exports = [
+export default [
   // new BundleAnalyzerPlugin(),
   new webpack.optimize.CommonsChunkPlugin({
     name: 'vendor'
